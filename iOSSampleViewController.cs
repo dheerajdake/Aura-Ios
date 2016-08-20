@@ -138,22 +138,25 @@ namespace iOSSample
             InvokeInBackground(aiService.Cancel);
         }
 
-        void AiService_OnResult(ApiAiSDK.Model.AIResponse response)
+             void AiService_OnResult(ApiAiSDK.Model.AIResponse response)
         {
             InvokeOnMainThread(() =>
-                {
-                    if (!response.IsError)
-                    {
+				{
+				if (!response.IsError)
+				{
+					//add text
+					//var parameterString = JsonConvert.SerializeObject(response);
 
-						var jsonSettings = new JsonSerializerSettings
-                        { 
-							NullValueHandling = NullValueHandling.Ignore,
-                        };
+					//  resultTextView.Text;
 
-						var responseString = JsonConvert.SerializeObject(response, Formatting.Indented, jsonSettings);
-                        resultTextView.Text = responseString;
+					var jsonSettings = new JsonSerializerSettings
+					{
+						NullValueHandling = NullValueHandling.Ignore,
+					};
 
-						Speak(response.Result.Fulfillment.Speech);
+					var responseString = JsonConvert.SerializeObject(response.Result.ResolvedQuery, Formatting.Indented, jsonSettings);
+						resultTextView.Text = responseString;
+						//Speak(response.Result.Fulfillment.Speech);
                     }
                     else
                     {
@@ -161,8 +164,7 @@ namespace iOSSample
                         resultTextView.Text = response.Status.ErrorDetails;
                     }
                 }
-            );
-        }
+          
 
 		void Speak(string text)
 		{
