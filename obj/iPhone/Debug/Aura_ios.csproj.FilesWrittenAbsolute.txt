@@ -1,0 +1,8 @@
+/Users/wangxy/Downloads/ApiAiSDK-1.6.0/samples/iOSSample/obj/iPhone/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/wangxy/Downloads/ApiAiSDK-1.6.0/samples/iOSSample/obj/iPhone/Debug/optimized/
+/Users/wangxy/Downloads/ApiAiSDK-1.6.0/samples/iOSSample/obj/iPhone/Debug/iOSSample.exe
+/Users/wangxy/Downloads/ApiAiSDK-1.6.0/samples/iOSSample/obj/iPhone/Debug/iOSSample.exe.mdb
+/Users/wangxy/Downloads/ApiAiSDK-1.6.0/samples/iOSSample/bin/iPhone/Debug/ApiAi.iOS.dll
+/Users/wangxy/Downloads/ApiAiSDK-1.6.0/samples/iOSSample/bin/iPhone/Debug/ApiAiSDK.dll
+/Users/wangxy/Downloads/ApiAiSDK-1.6.0/samples/iOSSample/bin/iPhone/Debug/Newtonsoft.Json.dll
+/Users/wangxy/Downloads/ApiAiSDK-1.6.0/samples/iOSSample/bin/iPhone/Debug/ModernHttpClient.dll
